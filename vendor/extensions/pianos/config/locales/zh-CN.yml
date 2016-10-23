@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: 建立新的 Piano
+            reorder: 对 Pianos 重新排序
+            reorder_done: 对 Pianos 的重新排序结束
+          records:
+            title: Pianos
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pianos yet. Click "Add New Piano" to add your first piano.
+            no_items_yet: 目前没有 Pianos . 点击 "Add New Piano" 创建一个piano.
+          piano:
+            view_live_html: 查看 piano 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 piano
+            delete: 永久删除 piano
+      pianos:
+        show:
+          other: 其他 Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

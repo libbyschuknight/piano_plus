@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: Přidat Piano
+            reorder: Řadit Pianos
+            reorder_done: Konec řazení Pianos
+          records:
+            title: Pianos
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pianos. Zvolte "Přidat Piano" pro přidání prvního piano.
+          piano:
+            view_live_html: Zobrazit náhled piano<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit piano
+            delete: Smazat piano
+      pianos:
+        show:
+          other: Další Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

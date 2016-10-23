@@ -1,0 +1,32 @@
+it:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: Aggiungi Nuovo Piano
+            reorder: Riordina Pianos
+            reorder_done: Termina il Riordino di Pianos
+          records:
+            title: Pianos
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pianos. Clicca "Aggiungi Nuovo Piano" per aggiungere il tuo primo piano.
+          piano:
+            view_live_html: Guarda live questo piano <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo piano
+            delete: Rimuovi per sempre questo piano
+      pianos:
+        show:
+          other: Altri Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

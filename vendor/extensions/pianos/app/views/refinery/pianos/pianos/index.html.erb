@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pianos">
+    <% @pianos.each do |piano| %>
+      <li>
+        <%= link_to piano.name, refinery.pianos_piano_path(piano) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

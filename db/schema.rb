@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161022044418) do
+ActiveRecord::Schema.define(version: 20161023034443) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -143,6 +143,18 @@ ActiveRecord::Schema.define(version: 20161022044418) do
   add_index "refinery_pages", ["lft"], name: "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt"
+
+  create_table "refinery_pianos", force: :cascade do |t|
+    t.string   "name"
+    t.string   "dimensions"
+    t.date     "manufactured_on"
+    t.boolean  "upright"
+    t.integer  "photo_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false

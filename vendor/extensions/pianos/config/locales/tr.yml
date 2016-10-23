@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: Yeni Ekle Piano
+            reorder: Tekrar sirala Pianos
+            reorder_done: Tekrar siralama tamamlandiPianos
+          records:
+            title: Pianos
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pianos yok henuz.  Tikla "Yeni Ekle Piano" eklemek senin ilk piano.
+          piano:
+            view_live_html: Bunu canlu piano goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle piano
+            delete: Bunu Sil piano sonsuza dek
+      pianos:
+        show:
+          other: Diger Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

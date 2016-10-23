@@ -1,0 +1,32 @@
+ru:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: Добавить Piano
+            reorder: Изменить порядок Pianos
+            reorder_done: Закончить изменять порядок Pianos
+          records:
+            title: Pianos
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pianos" не найдено. Нажмите "Добавить Piano" чтобы создать piano.
+          piano:
+            view_live_html: Просмотреть piano вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать piano
+            delete: Удалить piano навсегда
+      pianos:
+        show:
+          other: Другие Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

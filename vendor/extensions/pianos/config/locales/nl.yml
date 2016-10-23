@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      pianos:
+        title: Pianos
+    pianos:
+      admin:
+        pianos:
+          actions:
+            create_new: Nieuwe Piano toevoegen
+            reorder: De volgorde van de Pianos wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Piano-volgorde
+          records:
+            title: Pianos
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pianos. Druk op 'Nieuwe Piano toevoegen' om de eerste toe te voegen.
+          piano:
+            view_live_html: Deze piano op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze piano
+            delete: Deze piano definitief verwijderen
+      pianos:
+        show:
+          other: Andere Pianos
+  activerecord:
+    attributes:
+      'refinery/pianos/piano':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description
