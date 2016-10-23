@@ -1,57 +1,16 @@
-<% content_for :body_content_title do %>
-  <%= @piano.name %>
-<% end %>
-
-<% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @piano.name %>
-    </p>
+<section id="body_content">
+  <section id="body">
+    <div id="piano">
+      <%= image_fu @piano.photo, "400x400", class: "image-align-left" %>
+      <h1><%= @piano.name %></h1>
+      <p>
+        <b>Dimensions:</b> @piano.dimensions
+      </p>
+      <p>
+        <b>Manufacture Date:</b> <%= @piano.manufactured_on.year %>
+      </p>
+       <%= raw @piano.description %>
+       <p class="back"><%= link_to "Back to Pianos", refinery.pianos_pianos_path %></p>
+    </div>
   </section>
-  <section>
-    <h1>Dimensions</h1>
-    <p>
-      <%=raw @piano.dimensions %>
-    </p>
-  </section>
-  <section>
-    <h1>Manufactured On</h1>
-    <p>
-      <%=raw @piano.manufactured_on %>
-    </p>
-  </section>
-  <section>
-    <h1>Upright</h1>
-    <p>
-      <%=raw @piano.upright %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
-    <p>
-      <%= image_fu @piano.photo, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @piano.description %>
-    </p>
-  </section>
-<% end %>
-
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="pianos">
-      <% @pianos.each do |piano| %>
-        <li>
-          <%= link_to piano.name, refinery.pianos_piano_path(piano) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+</section>
